@@ -6,7 +6,12 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
 @Entity
+@Scope("prototype")
+@Component
 public class Application {
 	
 	@Id
@@ -95,6 +100,8 @@ public class Application {
 			return false;
 		return true;
 	}
+
+	
 	
 	
 

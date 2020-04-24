@@ -8,7 +8,12 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
 @Entity
+@Scope("prototype")
+@Component
 public class Ticket {
 	
 	@Id
