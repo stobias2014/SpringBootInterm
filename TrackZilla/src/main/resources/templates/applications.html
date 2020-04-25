@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Application Listing</title>
+</head>
+<body>
+
+	<table>
+		<thead>
+			<th>#</th>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Owner</th>
+		</thead>
+		
+		<tbody>
+			<tr th:each="app : ${applications}">
+				<td th:text="${app.applicationId}">...</td>
+				<td th:text="${app.description}">...</td>
+				<td th:text="${app.name}">...</td>
+				<td th:text="${app.owner}">...</td>
+			</tr>
+		</tbody>
+
+	</table>
+
+</body>
+</html>

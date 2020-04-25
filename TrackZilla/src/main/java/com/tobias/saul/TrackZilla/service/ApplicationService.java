@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.tobias.saul.TrackZilla.entity.Application;
-import com.tobias.saul.TrackZilla.entity.Release;
 import com.tobias.saul.TrackZilla.repository.ApplicationRepository;
 
 @Service

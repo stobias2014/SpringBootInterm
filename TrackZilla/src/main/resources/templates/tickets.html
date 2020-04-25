@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ticket Listing</title>
+</head>
+<body>
+
+	<table>
+		<thead>
+			<th>#</th>
+			<th>Title</th>
+			<th>Description</th>
+			<th>Application Name</th>
+		</thead>
+		
+		<tbody>
+			<tr th:each="ticket : ${tickets}">
+				<td th:text="${ticket.ticketId}">...</td>
+				<td th:text="${ticket.title}">...</td>
+				<td th:text="${ticket.description}">...</td>
+				<td th:text="${ticket.application.name}">...</td>
+			</tr>
+		</tbody>
+	</table>
+
+</body>
+</html>
